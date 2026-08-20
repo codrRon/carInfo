@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Info Cars</title>
+    <style>
+        body::after {
+        content: "";
+        background: url(image/frontimage2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        position: absolute;
+        z-index: -2;
+        background-size: 100vw;
+
+      }   
+
+    </style>
+<script type="text/javascript">
+function validate()  {
+          var username = document.getElementById("uname");
+          var password = document.getElementById("pass");
+
+
+if(username.value =="" && password.value == "")
+            {
+               alert("Please enter the username and password");
+                username.style.border="3px solid red";
+                password.style.border="3px solid red";
+                return false;     
+            }
+else if(username.value.trim() == "")
+            {
+              alert("No Username entered");
+              username.style.border="3px solid red";
+              return false;
+            }            
+ else if(password.value.trim() =="")
+           {
+               alert("No Password Entered");
+               password.style.border="3px solid red";
+               return false;
+           }
+
+else if(username.value.trim()=="" && password.value.trim()==""){
+    alert("Please renter the username and passwrord")
+    return false;
+}
+
+else if(password.value.trim().length<5)
+            {
+                alert("Password is too short");
+                password.style.border="3px solid red";
+                return false;
+            }
+
+else if(username.value != 'hello')
+           {
+               alert("Incorrect Username !!");
+               return true;
+           } 
+
+else if(password.value != 'world')
+           {
+               alert("Incorrect Password !!");
+               return true;
+           }
+else {
+    return true;
+    } 
+
+}
+</script>
+</head>
+<body>
+<h1 style="position: absolute;left: 40%;font-size: 75px;top: -5%;font-family: Arial, Helvetica, sans-serif;color:white;"><b><i>Info Cars</i></b></h1>
+
+<h1 style="position: absolute;left:46%;top:30%;font-size: 45px;color:white;font-family: Arial, Helvetica, sans-serif;">Log In</h1> 
+
+<form onsubmit="return validate()" action="frontpage.html" style="position: absolute;left: 45%;top: 45%;">
+<input style="border-radius: 20px;width: 193px;height: 26px;" id="uname" placeholder="Username"
+type="text"/><br><br>
+
+<input style="border-radius: 20px;width: 193px;height: 26px;" id="pass" placeholder="Password"
+type="password"/><br><br>
+
+<button type="submit" style="position:absolute;left:30%;border-radius: 10px;width:68px ;height: 34px;">Submit</button>
+ </form>
+ </body>
+  </html>

@@ -1,0 +1,80 @@
+
+ 
+  body::after {
+    content: "";
+    background: url(image/correct.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top:-25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: -2000px;
+    position: absolute;
+    z-index: -1;
+    background-size: 100vw;
+
+  } 
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+    :root{
+        --navbar-height:59px;
+    }
+    #navbar{
+
+        display: flex;
+        align-items:center;
+       
+    }
+    
+    
+
+    #navbar ul{
+        display: flex;
+    }
+
+    #navbar::before{
+        content: "";
+        background-color:black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index:  -1;
+        opacity: .6;
+        overflow: hidden;
+    }
+
+    #navbar ul li{
+        margin: 4px 4px;
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    #navbar ul li a{
+        display: block;
+        padding: 10px 15px;
+        font-family: arial;
+        font-size: 17px;
+        text-decoration:none ;
+        color: white;
+        
+        
+        
+    }
+
+    #navbar ul li a:hover{
+      color:black ;
+    background-color: white;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    #navbar{
+        position: relative;
+        top: 0px;
+        
+    }
