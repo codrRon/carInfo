@@ -2,7 +2,7 @@
  
   body::after {
     content: "";
-    background: url(image/correct.jpg);
+    background: url(correct.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     opacity: 0.2;
